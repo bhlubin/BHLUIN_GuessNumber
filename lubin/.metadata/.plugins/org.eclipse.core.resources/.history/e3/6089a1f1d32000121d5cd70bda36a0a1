@@ -1,0 +1,13 @@
+
+package com.guessNumber.TestGetNumber;
+
+import com.guessNumber.GetRandomNumber.GetRandomNumber;
+
+public class Test {
+	public static void main(String[] args){
+		GetRandomNumber getRandomNumber=new GetRandomNumber();
+		System.out.println(getRandomNumber.GetRandomNumber(4).toString());
+		System.out.println();
+		
+	}
+}

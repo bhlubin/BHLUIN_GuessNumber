@@ -1,0 +1,7 @@
+package com.guessNumber.TestGetNumber;
+
+public class test {
+  public static void main(){
+	  inite();
+  }
+}

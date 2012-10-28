@@ -1,0 +1,29 @@
+
+package com.guessNumber.TestGetNumber;
+
+import java.util.Scanner;
+
+import com.guessNumber.GetRandomNumber.GetRandomNumber;
+
+public class Test {
+	public static void main(String[] args){
+		String userInput;
+		int a=0,b=0;
+		System.out.println("请输入四个0-9之间不同的数字:");
+	   Scanner scn=new Scanner(System.in);
+	   userInput=scn.nextLine();
+		GetRandomNumber getRandomNumber=new GetRandomNumber();
+		String getnum=getRandomNumber.GetRandomNumber(4);
+		for(int i=0;i<4;i++){
+			if(getnum.charAt(i)==(userInput.charAt(i)))
+				a++;
+			else if(getnum.contains(String.valueOf(userInput.charAt(i)))){
+				b++;
+			}
+		}
+//		b-=a;	
+		System.out.println("用户猜想数字为"+userInput);
+		System.out.println("试验数据为:"+getnum);
+		System.out.printf("游戏结果为%dA%dB",a,b);
+	}
+}

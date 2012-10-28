@@ -1,0 +1,10 @@
+package com.guessNumber.TestGetNumber;
+
+import com.guessNumber.GetRandomNumber.GetRandomNumber;
+
+public class test {
+  public static void main(){
+	  GetRandomNumber getRandomNumber=new GetRandomNumber();
+	  getRandomNumber.inite();
+  }
+}

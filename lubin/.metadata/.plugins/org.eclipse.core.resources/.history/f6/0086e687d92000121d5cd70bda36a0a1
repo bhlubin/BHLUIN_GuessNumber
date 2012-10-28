@@ -1,0 +1,15 @@
+
+package com.guessNumber.TestGetNumber;
+
+import com.guessNumber.GetRandomNumber.GetRandomNumber;
+
+public class Test {
+	public static void main(String[] args){
+		int a=0,b=0;
+		System.out.println("");	
+		GetRandomNumber getRandomNumber=new GetRandomNumber();
+		for(int i=0;i<4;i++){
+		getRandomNumber.GetRandomNumber(4);
+		}
+	}
+}

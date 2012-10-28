@@ -1,0 +1,14 @@
+package com.guessNumber.GetRandomNumber;
+
+
+ public static int[] GetRandomNumber(int n) {   
+     int [] seed = {0,1,2,3,4,5,6,7,8,9};   
+     int [] ranArr = new int [n];   
+     Random ran = new Random();   
+     for(int i = 0 ; i<n ; i++){   
+         int j = ran.nextInt(seed.length-i);   
+         ranArr [i] = seed [j];   
+     }   
+     return ranArr;
+ }   
+
